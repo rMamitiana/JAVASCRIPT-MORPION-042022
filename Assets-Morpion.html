@@ -234,7 +234,7 @@
             top: 50%;
             left: 50%;
             width: 200px;
-            heigth: 200px;
+            height: 200px;
             border: 1px solid black;
         }
         
@@ -263,39 +263,26 @@
             </div>
         </div>
 
+        <p id="winner" style="height:20px; text-align: center; margin-top: 1em;"></p>
+
         <div class='grid-container'>
-            <button class='grid-item' id='item1' onclick='choiseCase(this.id)'>X</button>
-            <button class='grid-item' id='item2' onclick='choiseCase(this.id)'>0</button>
-            <button class='grid-item' id='item3' onclick='choiseCase(this.id)'></button>
-            <button class='grid-item' id='item4' onclick='choiseCase(this.id)'></button>
-            <button class='grid-item' id='item5' onclick='choiseCase(this.id)'></button>
-            <button class='grid-item' id='item6' onclick='choiseCase(this.id)'></button>
-            <button class='grid-item' id='item7' onclick='choiseCase(this.id)'></button>
-            <button class='grid-item' id='item8' onclick='choiseCase(this.id)'></button>
-            <button class='grid-item' id='item9' onclick='choiseCase(this.id)'></button>
+            <button class='grid-item' id='item1'>X</button>
+            <button class='grid-item' id='item2'>0</button>
+            <button class='grid-item' id='item3'></button>
+            <button class='grid-item' id='item4'></button>
+            <button class='grid-item' id='item5'></button>
+            <button class='grid-item' id='item6'></button>
+            <button class='grid-item' id='item7'></button>
+            <button class='grid-item' id='item8'></button>
+            <button class='grid-item' id='item9'></button>
+        </div>
+
+        <div class='my-4 d-flex'>
+            <button id="reset" class="reset">Reset</button>
         </div>
     </div>
 
-    <script>
-        (function() {
-
-            // Récupération des cases à clicker
-            const items = document.getElementsByClassName('grid-item');
-
-            function choiseCase(id) {
-
-            }
-
-            // Vide le contenu de toute les cases
-            function rest() {
-                for (var i = 0; i < items.length; i++) {
-                    console.log(items[i]);
-                    items[i].textContent = ''
-                }
-            }
-
-        })();
-    </script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
